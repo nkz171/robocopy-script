@@ -1,7 +1,5 @@
 ﻿Get-PSDrive 
-[System.IO.DriveInfo]::getdrives()
-#Get-Disk | Where-Object –FilterScript {$_.Bustype -Eq "USB"}
-# Get-Wmiobject Win32_logicaldisk | Select-Object deviceid,size,freespace
+[System.IO.DriveInfo]::getdrives()e
 $Laufwerksbuchstabe = Read-Host "Bitte geben Sie den entsprechenden Laufwerksbuchstaben ein!"
 
 if (Test-Path "${Laufwerksbuchstabe}:\Sicherung_D\Pruefdatei---Nicht-loeschen.txt") 
